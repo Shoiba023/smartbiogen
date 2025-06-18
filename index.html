@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartBioGen</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+</head>
+<body>
+  <div class="header">
+    <img src="assets/logo.png" alt="SmartBioGen Logo" class="logo">
+    <h2>SmartBioGen - AI Bio Generator</h2>
+  </div>
+
+  <label>Name:</label><br>
+  <input type="text" id="name"><br><br>
+
+  <label>Profession:</label><br>
+  <input type="text" id="profession"><br><br>
+
+  <label>Tone:</label><br>
+  <select id="tone">
+    <option value="Professional">Professional</option>
+    <option value="Friendly">Friendly</option>
+    <option value="Bold">Bold</option>
+  </select><br><br>
+
+  <button onclick="generateBio()">Generate Bio</button>
+  <button onclick="copyBio()">Copy Bio</button><br><br>
+
+  <h3>Generated Bio:</h3>
+  <p id="output"></p>
+
+  <div class="branding">
+    <p>Powered by <strong>Smart AI Partners</strong></p>
+    <a href="https://smartpartners.io" target="_blank">Visit our website</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
