@@ -21,20 +21,32 @@
 
   <label>Tone:</label><br>
   <select id="tone">
-    <option value="Professional">Professional</option>
     <option value="Friendly">Friendly</option>
+    <option value="Luxury">Luxury</option>
+    <option value="Corporate">Corporate</option>
     <option value="Bold">Bold</option>
+    <option value="Youthful">Youthful</option>
+    <option value="Spiritual">Spiritual</option>
+  </select><br><br>
+
+  <label>Preview Layout:</label><br>
+  <select id="preview">
+    <option value="LinkedIn">LinkedIn</option>
+    <option value="Fiverr">Fiverr</option>
+    <option value="WhatsApp">WhatsApp</option>
   </select><br><br>
 
   <button onclick="generateBio()">Generate Bio</button>
   <button onclick="copyBio()">Copy Bio</button><br><br>
 
   <h3>Generated Bio:</h3>
-  <p id="output"></p>
+  <div id="previewBox" class="preview-box">
+    <p id="output"></p>
+  </div>
 
   <div class="branding">
     <p>Powered by <strong>Smart AI Partners</strong></p>
-    <a href="https://smartaipartners.io" target="_blank">Visit our website</a>
+    <a href="https://smartpartners.io" target="_blank">Visit our website</a>
   </div>
 
   <script src="script.js"></script>
